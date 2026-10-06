@@ -1,0 +1,9 @@
+export const facultyGroups = [
+  { name: 'ศิลปะและการออกแบบ', english: 'ARTS & DESIGN', faculties: ['คณะจิตรกรรม ประติมากรรมและภาพพิมพ์', 'คณะสถาปัตยกรรมศาสตร์', 'คณะมัณฑนศิลป์', 'คณะดุริยางคศาสตร์'] },
+  { name: 'มนุษยศาสตร์และสังคมศาสตร์', english: 'HUMANITIES & SOCIAL SCIENCES', faculties: ['คณะโบราณคดี', 'คณะอักษรศาสตร์', 'คณะศึกษาศาสตร์', 'คณะวิทยาการจัดการ'] },
+  { name: 'วิทยาศาสตร์และเทคโนโลยี', english: 'SCIENCE & TECHNOLOGY', faculties: ['คณะวิทยาศาสตร์', 'คณะเภสัชศาสตร์', 'คณะวิศวกรรมศาสตร์', 'เทคโนโลยีอุตสาหกรรม', 'คณะสัตวศาสตร์', 'เทคโนโลยีการเกษตร', 'คณะเทคโนโลยีสารสนเทศและการสื่อสาร (ICT)'] },
+  { name: 'วิทยาศาสตร์สุขภาพและอื่น ๆ', english: 'HEALTH SCIENCES & MORE', faculties: ['คณะสหเวชศาสตร์', 'วิทยาลัยนานาชาติ', 'คณะนิเทศศาสตร์', 'คณะนิติศาสตร์', 'คณะรัฐศาสตร์', 'คณะบริหารธุรกิจและการบัญชี', 'คณะครุศาสตร์ / ศึกษาศาสตร์'] },
+];
+export const internationalPrograms = { bachelor: ['Business & Technology', 'Luxury Brand Management', 'International Hospitality Management', 'Digital Communication Design'], master: ['การจัดการและอนุรักษ์ศิลปกรรม', 'การตลาดดิจิทัลและการวิเคราะห์ข้อมูล'] };
+export const clubs = ['ชมรมสืบศิลป์ถิ่นใต้', 'ชมรมล้านนา', 'ชมรมล้านช้าง', 'ชมรมวัฒนธรรมภารตะ', 'ชมรมอนุรักษ์ศิลปะโบราณคดีและวัฒนธรรมพื้นบ้าน', 'ชมรมดนตรีสากล', 'ชมรมถ่ายภาพ', 'ชมรมพิธีกรและนักจัดรายการวิทยุ', 'ชมรมด้านกีฬาและทักษะ', 'ชมรมหมากกระดาน', 'ชมรมฟันดาบ', 'ชมรมเบสบอล', 'ชมรม e-sports'];
+export function pageMeta(title: string, description: string) { const fullTitle = `${title} — มหาวิทยาลัยศิลปาวรณ์`; return { meta: [{ title: fullTitle }, { name: 'description', content: description }, { property: 'og:title', content: fullTitle }, { property: 'og:description', content: description }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary_large_image' }] }; }
